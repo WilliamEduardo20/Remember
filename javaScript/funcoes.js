@@ -26,19 +26,19 @@ export function expandirMenu() {
 }
 
 //anicia Modo//
-//export function mudaCor(){
-//    if (definicao == "escuro") {
-//        var icons = document.querySelector(".fa-solid");
-//        icons.style.color = 'whitesmoke';
-// 
-//        var menu = document.querySelector(".menu-lateral");
-//        menu.style.backgroundColor = "black";
-//    
-//        var logo = document.querySelector(".logo-nome");
-//        logo.style.backgroundColor = "black";
-//        var nome = document.querySelector(".arial");
-//        nome.style.color = "whitesmoke";
-//    } else {
-//
-//    }
-//}
+export function mudaCor(){
+    if (definicao == "escuro") {
+        var icons = document.querySelector(".fa-solid");
+        icons.style.color = 'whitesmoke';
+ 
+        var menu = document.querySelector(".menu-lateral");
+        menu.style.backgroundColor = "black";
+    
+        var logo = document.querySelector(".logo-nome");
+        logo.style.backgroundColor = "black";
+        var nome = document.querySelector(".arial");
+        nome.style.color = "whitesmoke";
+    } else {
+
+    }
+}
