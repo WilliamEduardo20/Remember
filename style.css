@@ -1,0 +1,349 @@
+/*Config Interna dos Comandos*/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{ text-decoration: none; color: aliceblue;}
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: aliceblue;
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: rgba(7, 94, 189, 0.09) 0px 2px 1px, rgba(7, 94, 189, 0.09) 0px 4px 2px, rgba(7, 94, 189, 0.09) 0px 8px 4px, rgba(7, 94, 189, 0.09) 0px 16px 8px, rgba(7, 94, 189, 0.09) 0px 32px 16px;
+    z-index: 2;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 55px;
+    height: 89vh;
+    background-color: white;
+}
+footer{
+    display: flex;
+}
+
+
+/*Lista de Classes*/
+.arial{ font-family: Arial, Helvetica, sans-serif;}
+.azul{ color: #075ebd;}
+
+
+/*Topo com Logo*/
+.logo-nome img{
+    margin-left: 90px;
+    height: 50px;
+}
+
+
+/*Menu Lateral*/
+nav.menu-lateral{
+    width: 73px;
+    height: 100%;
+    background-color: whitesmoke;
+    padding: 40px 0 40px 10px;
+    box-shadow: 3px 0 0 rgba(127, 124, 124, 0.4);
+    position: fixed;
+    top: 0px;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 3;
+}
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+h1.expandir{
+    width: 300px;
+}
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+.btn-expandir > i{
+    color: #075ebd;
+    font-size: 24px;
+    padding: 5px;
+    cursor: pointer;
+}
+.itens{
+    height: 100%;
+    list-style-type: none;
+}
+.itens li.item-menu{
+    transition: .2s;
+}
+.itens li.ativo{
+    background-color: rgba(127, 124, 124, 0.4);
+}
+.itens li.item-menu:hover{
+    background: rgba(127, 124, 124, 0.4);
+}
+.itens li.item-menu a{
+    color: #075ebd;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.itens li.item-menu a .txt-link{
+    margin-left: 40px;
+}
+.itens li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+
+/*Drop Dawn*/
+.dropdawn-position{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.dropdawn{
+    position: fixed;
+    margin-left: 90px;
+    z-index: 2;
+}
+.dropdawn ul{
+    background-color: #075ebd;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    position: relative;
+    border: 1px solid #0877ee;
+}
+.dropdawn ul li:hover{
+    background-color: #0877ee;
+    border-radius: 5px;
+}
+.dropdawn ul li{
+    color: white;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.dropdawn ul ul{
+    display: none;
+    position: fixed;
+    width: 96px;
+    z-index: 2;
+}
+.dropdawn ul li:hover > ul{
+    display: block;
+}
+
+/*Borda Dinâmica*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    text-align: center;
+}
+.nav a{
+    text-decoration: none;
+    position: relative;
+}
+.nav a::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: rgb(49, 49, 49);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+.nav a:hover::after{
+    width: 100%;
+}
+
+
+/*Bacground Fundo*/
+#fundo{
+    position: fixed;
+    height: calc(100% - 50px);
+    width: calc(100% - 76px);
+    top: 50px;
+    left: 76px;
+    z-index: 0;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Aba Principal*/
+#aba-principal{
+    position: absolute;
+    top: 0;
+    left: -1000%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.aba{
+    background-color: rgb(41, 41, 41);
+    height: 80%;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 10px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+#pdf ,#questoes{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    cursor: pointer;
+}
+
+
+/*Config para Celular*/
+@media only screen and (max-width: 708px) {
+    header{
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 8px;
+        align-items: center;
+        justify-content: start;
+        padding: 5px;
+        background-color: aliceblue;
+        height: 50px;
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: rgba(7, 94, 189, 0.09) 0px 2px 1px, rgba(7, 94, 189, 0.09) 0px 4px 2px, rgba(7, 94, 189, 0.09) 0px 8px 4px, rgba(7, 94, 189, 0.09) 0px 16px 8px, rgba(7, 94, 189, 0.09) 0px 32px 16px;
+        z-index: 2;
+    }
+    header h1{
+        font-size: 20px;
+    }
+
+    /*Drop Dawn*/
+    .dropdawn{
+        position: fixed;
+        margin-left: 72px;
+        top: 50px;
+        left: 5px;
+        padding: 5px;
+        z-index: 2;
+    }
+    .dropdawn ul{
+        background-color: #075ebd;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 5px;
+        flex-wrap: wrap;
+        position: relative;
+        border: 1px solid #0877ee;
+    }
+    .dropdawn ul li:hover{
+        background-color: #0877ee;
+        border-radius: 5px;
+    }
+    .dropdawn ul li{
+        color: white;
+        padding: 10px;
+        position: relative;
+        cursor: pointer;
+    }
+    .dropdawn ul ul{
+        display: none;
+        position: fixed;
+        width: 96px;
+        z-index: 2;
+    }
+    .dropdawn ul li:hover > ul{
+        display: block;
+    }
+
+    /*Bacground Fundo*/
+    #fundo{
+        position: fixed;
+        height: calc(100% - 50px);
+        width: calc(100% - 72px);
+        top: 50px;
+        left: 72px;
+        z-index: 0;
+    }
+
+    /*Aba Principal*/
+    #aba-principal{
+        position: absolute;
+        top: 0;
+        left: -1000%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+    .aba{
+        background-color: rgb(41, 41, 41);
+        height: 90%;
+        width: 80%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
+        padding: 10px;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    }
+    #pdf ,#questoes{
+        position: relative;
+        height: 420px;
+        width: 250px;
+        background-color: rgb(204, 204, 204);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+        cursor: pointer;
+    }
+    #pdf{
+        background-image: url(./img/pdf-icone.jpg);
+        background-size: 100% 100%;
+    }
+}
+
+#pdfViewer{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}

@@ -1,0 +1,141 @@
+/*Config Interna dos Comandos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Lista de Classes*/
+.arial{ font-family: Arial, Helvetica, sans-serif;}
+
+/*Topo == Header*/
+.logo-nome img{
+    margin-left: 90px;
+    height: 50px;
+}
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: aliceblue;
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: rgba(7, 94, 189, 0.09) 0px 2px 1px, rgba(7, 94, 189, 0.09) 0px 4px 2px, rgba(7, 94, 189, 0.09) 0px 8px 4px, rgba(7, 94, 189, 0.09) 0px 16px 8px, rgba(7, 94, 189, 0.09) 0px 32px 16px;
+    z-index: 2;
+}
+
+/*Main*/
+/*Menu Lateral*/
+nav.menu-lateral{
+    width: 73px;
+    height: 100%;
+    background-color: whitesmoke;
+    padding: 40px 0 40px 10px;
+    box-shadow: 3px 0 0 rgba(127, 124, 124, 0.4);
+    position: fixed;
+    top: 0px;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 3;
+}
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+h1.expandir{
+    width: 300px;
+}
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+.btn-expandir > i{
+    color: #075ebd;
+    font-size: 24px;
+    padding: 5px;
+    cursor: pointer;
+}
+.itens{
+    height: 100%;
+    list-style-type: none;
+}
+.itens li.item-menu{
+    transition: .2s;
+}
+.itens li.ativo{
+    background-color: rgba(127, 124, 124, 0.4);
+}
+.itens li.item-menu:hover{
+    background: rgba(127, 124, 124, 0.4);
+}
+.itens li.item-menu a{
+    color: #075ebd;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.itens li.item-menu a .txt-link{
+    margin-left: 40px;
+}
+.itens li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+/*Ajustes*/
+.ajustes{
+    background-color: rgba(0, 0, 0, 0.256);
+    margin-left: 75px;
+    margin-top: 51px;
+    padding: 5px;
+}
+
+.ajustes .card-header div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.ajustes .card-header label{ padding: 10px;}
+
+.ajustes .card-header div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    cursor: pointer;
+  }
+input[type=checkbox]:checked {
+    background-color: #007bff;
+    border: 2px solid #007bff;
+}
+input[type=checkbox]:checked::before {
+    content: '\2714'; /* Símbolo de marca de seleção */
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    color: white;
+    font-size: 14px;
+}
+
+.exibicao{
+    width: 500px;
+}
